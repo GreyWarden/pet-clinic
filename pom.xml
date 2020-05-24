@@ -44,9 +44,7 @@
         </plugins>
     </build>
     <scm>
-        <developerConnection>
-            scm:git:git@github.com:GreyWarden/pet-clinic.git
-        </developerConnection>
+        <developerConnection>scm:git:git@github.com:GreyWarden/pet-clinic.git</developerConnection>
       <tag>pet-clinic-0.0.1</tag>
   </scm>
 </project>
