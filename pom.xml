@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.greywarden</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>pet-clinic</name>
     <description>Pet Clinic</description>
 
@@ -30,6 +30,11 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
                 <configuration>
@@ -41,6 +46,5 @@
     </build>
     <scm>
         <developerConnection>scm:git:git@github.com:GreyWarden/pet-clinic.git</developerConnection>
-        <tag>HEAD</tag>
   </scm>
 </project>
