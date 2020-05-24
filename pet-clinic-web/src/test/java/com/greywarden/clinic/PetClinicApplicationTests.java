@@ -1,4 +1,4 @@
-package com.greywarden.petclinic;
+package com.greywarden.clinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
