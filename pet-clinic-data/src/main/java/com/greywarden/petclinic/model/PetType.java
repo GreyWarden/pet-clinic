@@ -1,6 +1,6 @@
 package com.greywarden.petclinic.model;
 
-public final class PetType {
+public final class PetType extends BaseEntity {
     private String name;
 
     public String getName() {
