@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.greywarden</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>pet-clinic</name>
     <description>Pet Clinic</description>
 
@@ -46,6 +46,6 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/GreyWarden/pet-clinic.git</developerConnection>
-    <tag>pet-clinic-0.0.1</tag>
+    <tag>pet-clinic-0.0.3</tag>
   </scm>
 </project>
