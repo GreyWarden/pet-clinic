@@ -1,13 +1,15 @@
 package com.greywarden.petclinic.services.map;
 
 import com.greywarden.petclinic.model.Owner;
-import com.greywarden.petclinic.services.CrudService;
+import com.greywarden.petclinic.services.OwnerRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public final class OwnerMapRepository
         extends AbstractMapRepository<Owner, Long>
-        implements CrudService<Owner, Long>
+        implements OwnerRepository
 {
     @Override
     public Set<Owner> findAll() {
@@ -32,5 +34,10 @@ public final class OwnerMapRepository
     @Override
     public Owner findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
