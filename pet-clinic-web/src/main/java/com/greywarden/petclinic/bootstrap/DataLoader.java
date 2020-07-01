@@ -2,20 +2,20 @@ package com.greywarden.petclinic.bootstrap;
 
 import com.greywarden.petclinic.model.Owner;
 import com.greywarden.petclinic.model.Vet;
-import com.greywarden.petclinic.services.OwnerRepository;
-import com.greywarden.petclinic.services.VetRepository;
+import com.greywarden.petclinic.services.OwnerService;
+import com.greywarden.petclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
 public final class DataLoader implements CommandLineRunner {
 
-    private final OwnerRepository ownerRepository;
-    private final VetRepository vetRepository;
+    private final OwnerService ownerService;
+    private final VetService vetService;
 
-    public DataLoader(OwnerRepository ownerRepository, VetRepository vetRepository) {
-        this.ownerRepository = ownerRepository;
-        this.vetRepository = vetRepository;
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
@@ -24,13 +24,13 @@ public final class DataLoader implements CommandLineRunner {
         laura.setId(1L);
         laura.setFirstName("Laura");
         laura.setLastName("Coratge");
-        ownerRepository.save(laura);
+        ownerService.save(laura);
 
         Owner raul = new Owner();
         raul.setId(2L);
         raul.setFirstName("Raúl");
         raul.setLastName("Pavón");
-        ownerRepository.save(raul);
+        ownerService.save(raul);
 
         System.out.println("Loaded owners...");
 
@@ -38,13 +38,13 @@ public final class DataLoader implements CommandLineRunner {
         firstVet.setId(3L);
         firstVet.setFirstName("Vet");
         firstVet.setLastName("Erinario");
-        vetRepository.save(firstVet);
+        vetService.save(firstVet);
 
         Vet secondVet = new Vet();
         secondVet.setId(4L);
         secondVet.setFirstName("Vet");
         secondVet.setLastName("Adine");
-        vetRepository.save(secondVet);
+        vetService.save(secondVet);
 
         System.out.println("Loaded vets...");
     }

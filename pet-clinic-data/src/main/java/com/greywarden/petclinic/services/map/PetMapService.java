@@ -5,8 +5,8 @@ import com.greywarden.petclinic.services.CrudService;
 
 import java.util.Set;
 
-public final class PetMapRepository
-        extends AbstractMapRepository<Pet, Long>
+public final class PetMapService
+        extends AbstractMapService<Pet, Long>
         implements CrudService<Pet, Long>
 {
     @Override

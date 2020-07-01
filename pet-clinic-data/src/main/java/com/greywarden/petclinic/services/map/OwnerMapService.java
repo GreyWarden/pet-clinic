@@ -1,15 +1,15 @@
 package com.greywarden.petclinic.services.map;
 
 import com.greywarden.petclinic.model.Owner;
-import com.greywarden.petclinic.services.OwnerRepository;
+import com.greywarden.petclinic.services.OwnerService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public final class OwnerMapRepository
-        extends AbstractMapRepository<Owner, Long>
-        implements OwnerRepository
+public final class OwnerMapService
+        extends AbstractMapService<Owner, Long>
+        implements OwnerService
 {
     @Override
     public Set<Owner> findAll() {
