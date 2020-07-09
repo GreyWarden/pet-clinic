@@ -1,0 +1,8 @@
+#Spring banner
+spring:
+  banner:
+    image:
+       location: 'logo.jpg'
+#Server
+server:
+  port: 80
