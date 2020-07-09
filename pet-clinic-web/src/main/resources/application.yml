@@ -1,8 +1,10 @@
-#Spring banner
+#Spring
 spring:
   banner:
     image:
        location: 'logo.jpg'
+  messages:
+    basename: messages/messages
 #Server
 server:
   port: 80
