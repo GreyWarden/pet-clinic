@@ -1,4 +1,4 @@
-package com.greywarden.petclinic.model;
+package com.greywarden.petclinic.models;
 
 public class Person extends BaseEntity {
     private String firstName;

@@ -1,7 +1,7 @@
-package com.greywarden.petclinic.services.map;
+package com.greywarden.petclinic.repositories.map;
 
-import com.greywarden.petclinic.model.Pet;
-import com.greywarden.petclinic.services.CrudRepository;
+import com.greywarden.petclinic.models.Pet;
+import com.greywarden.petclinic.repositories.CrudRepository;
 
 import java.util.Set;
 

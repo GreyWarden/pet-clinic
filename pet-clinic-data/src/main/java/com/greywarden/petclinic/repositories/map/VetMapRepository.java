@@ -1,7 +1,7 @@
-package com.greywarden.petclinic.services.map;
+package com.greywarden.petclinic.repositories.map;
 
-import com.greywarden.petclinic.model.Vet;
-import com.greywarden.petclinic.services.VetRepository;
+import com.greywarden.petclinic.models.Vet;
+import com.greywarden.petclinic.repositories.VetRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

@@ -1,4 +1,4 @@
-package com.greywarden.petclinic.services;
+package com.greywarden.petclinic.repositories;
 
 import java.util.Set;
 

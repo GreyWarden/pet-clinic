@@ -1,9 +1,9 @@
 package com.greywarden.petclinic.bootstrap;
 
-import com.greywarden.petclinic.model.Owner;
-import com.greywarden.petclinic.model.Vet;
-import com.greywarden.petclinic.services.OwnerRepository;
-import com.greywarden.petclinic.services.VetRepository;
+import com.greywarden.petclinic.models.Owner;
+import com.greywarden.petclinic.models.Vet;
+import com.greywarden.petclinic.repositories.OwnerRepository;
+import com.greywarden.petclinic.repositories.VetRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

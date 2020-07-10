@@ -1,4 +1,4 @@
-package com.greywarden.petclinic.model;
+package com.greywarden.petclinic.models;
 
 import java.io.Serializable;
 

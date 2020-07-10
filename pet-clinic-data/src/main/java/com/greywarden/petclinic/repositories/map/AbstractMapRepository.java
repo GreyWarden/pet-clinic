@@ -1,6 +1,6 @@
-package com.greywarden.petclinic.services.map;
+package com.greywarden.petclinic.repositories.map;
 
-import com.greywarden.petclinic.model.BaseEntity;
+import com.greywarden.petclinic.models.BaseEntity;
 
 import java.util.*;
 

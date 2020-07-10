@@ -1,6 +1,6 @@
 package com.greywarden.petclinic.web.owner.showowners.infrastructure.controllers;
 
-import com.greywarden.petclinic.services.OwnerRepository;
+import com.greywarden.petclinic.repositories.OwnerRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

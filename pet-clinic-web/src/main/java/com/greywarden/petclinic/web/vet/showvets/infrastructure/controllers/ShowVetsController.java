@@ -1,6 +1,6 @@
 package com.greywarden.petclinic.web.vet.showvets.infrastructure.controllers;
 
-import com.greywarden.petclinic.services.VetRepository;
+import com.greywarden.petclinic.repositories.VetRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
