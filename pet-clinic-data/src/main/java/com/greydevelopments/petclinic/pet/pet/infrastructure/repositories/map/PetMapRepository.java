@@ -1,14 +1,16 @@
 package com.greydevelopments.petclinic.pet.pet.infrastructure.repositories.map;
 
 import com.greydevelopments.petclinic.pet.pet.domain.models.Pet;
-import com.greydevelopments.petclinic.shared.domain.repositories.crud.CrudRepository;
+import com.greydevelopments.petclinic.pet.pet.domain.repositories.PetRepository;
 import com.greydevelopments.petclinic.shared.infrastructure.repositories.map.AbstractMapRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public final class PetMapRepository
         extends AbstractMapRepository<Pet, Long>
-        implements CrudRepository<Pet, Long>
+        implements PetRepository
 {
     @Override
     public Set<Pet> findAll() {

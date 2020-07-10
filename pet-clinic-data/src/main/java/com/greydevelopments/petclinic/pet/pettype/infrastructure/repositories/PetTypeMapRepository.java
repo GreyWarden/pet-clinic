@@ -10,8 +10,7 @@ import java.util.Set;
 @Service
 public final class PetTypeMapRepository
         extends AbstractMapRepository<PetType, Long>
-        implements
-        PetTypeRepository
+        implements PetTypeRepository
 {
     @Override
     public Set<PetType> findAll() {
