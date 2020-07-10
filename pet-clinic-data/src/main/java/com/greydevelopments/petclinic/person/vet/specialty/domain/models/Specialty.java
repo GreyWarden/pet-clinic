@@ -1,4 +1,4 @@
-package com.greydevelopments.petclinic.vet.specialty.domain.models;
+package com.greydevelopments.petclinic.person.vet.specialty.domain.models;
 
 import com.greydevelopments.petclinic.shared.domain.models.base.BaseEntity;
 

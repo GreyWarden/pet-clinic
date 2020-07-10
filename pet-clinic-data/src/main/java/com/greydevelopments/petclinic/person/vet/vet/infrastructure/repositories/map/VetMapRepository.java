@@ -1,7 +1,7 @@
-package com.greydevelopments.petclinic.vet.vet.infrastructure.repositories.map;
+package com.greydevelopments.petclinic.person.vet.vet.infrastructure.repositories.map;
 
-import com.greydevelopments.petclinic.vet.vet.domain.models.Vet;
-import com.greydevelopments.petclinic.vet.vet.domain.repositories.VetRepository;
+import com.greydevelopments.petclinic.person.vet.vet.domain.models.Vet;
+import com.greydevelopments.petclinic.person.vet.vet.domain.repositories.VetRepository;
 import com.greydevelopments.petclinic.shared.infrastructure.repositories.map.AbstractMapRepository;
 import org.springframework.stereotype.Service;
 

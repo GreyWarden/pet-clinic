@@ -4,8 +4,8 @@ import com.greydevelopments.petclinic.person.owner.domain.models.Owner;
 import com.greydevelopments.petclinic.person.owner.domain.repositories.OwnerRepository;
 import com.greydevelopments.petclinic.pet.pettype.domain.models.PetType;
 import com.greydevelopments.petclinic.pet.pettype.domain.repositories.PetTypeRepository;
-import com.greydevelopments.petclinic.vet.vet.domain.models.Vet;
-import com.greydevelopments.petclinic.vet.vet.domain.repositories.VetRepository;
+import com.greydevelopments.petclinic.person.vet.vet.domain.models.Vet;
+import com.greydevelopments.petclinic.person.vet.vet.domain.repositories.VetRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

@@ -11,6 +11,28 @@ public final class Owner extends Person {
     private String phone;
     private Set<Pet> pets;
 
+    public Owner() {
+    }
+
+    public Owner(String firstName, String lastName) {
+        super(firstName, lastName);
+    }
+
+    public Owner(String firstName, String lastName, String address, String city, String phone) {
+        super(firstName, lastName);
+        this.address = address;
+        this.city = city;
+        this.phone = phone;
+    }
+
+    public Owner(String firstName, String lastName, String address, String city, String phone, Set<Pet> pets) {
+        super(firstName, lastName);
+        this.address = address;
+        this.city = city;
+        this.phone = phone;
+        this.pets = pets;
+    }
+
     public String getAddress() {
         return address;
     }
