@@ -1,15 +1,15 @@
 package com.greywarden.petclinic.web.vet.showvets.infrastructure.controllers;
 
-import com.greywarden.petclinic.services.VetService;
+import com.greywarden.petclinic.services.VetRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public final class ShowVetsController {
-    private final VetService vetService;
+    private final VetRepository vetService;
 
-    public ShowVetsController(VetService vetService) {
+    public ShowVetsController(VetRepository vetService) {
         this.vetService = vetService;
     }
 

@@ -2,7 +2,7 @@ package com.greywarden.petclinic.services;
 
 import java.util.Set;
 
-public interface CrudService<T, ID> {
+public interface CrudRepository<T, ID> {
     Set<T> findAll();
 
     T findById(ID id);

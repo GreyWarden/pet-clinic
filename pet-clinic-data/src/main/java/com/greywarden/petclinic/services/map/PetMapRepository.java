@@ -1,13 +1,13 @@
 package com.greywarden.petclinic.services.map;
 
 import com.greywarden.petclinic.model.Pet;
-import com.greywarden.petclinic.services.CrudService;
+import com.greywarden.petclinic.services.CrudRepository;
 
 import java.util.Set;
 
-public final class PetMapService
-        extends AbstractMapService<Pet, Long>
-        implements CrudService<Pet, Long>
+public final class PetMapRepository
+        extends AbstractMapRepository<Pet, Long>
+        implements CrudRepository<Pet, Long>
 {
     @Override
     public Set<Pet> findAll() {

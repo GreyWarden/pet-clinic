@@ -2,18 +2,18 @@ package com.greywarden.petclinic.bootstrap;
 
 import com.greywarden.petclinic.model.Owner;
 import com.greywarden.petclinic.model.Vet;
-import com.greywarden.petclinic.services.OwnerService;
-import com.greywarden.petclinic.services.VetService;
+import com.greywarden.petclinic.services.OwnerRepository;
+import com.greywarden.petclinic.services.VetRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
 public final class DataLoader implements CommandLineRunner {
 
-    private final OwnerService ownerService;
-    private final VetService vetService;
+    private final OwnerRepository ownerService;
+    private final VetRepository vetService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService) {
+    public DataLoader(OwnerRepository ownerService, VetRepository vetService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
     }

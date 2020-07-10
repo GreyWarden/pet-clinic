@@ -1,15 +1,15 @@
 package com.greywarden.petclinic.services.map;
 
 import com.greywarden.petclinic.model.Vet;
-import com.greywarden.petclinic.services.VetService;
+import com.greywarden.petclinic.services.VetRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public final class VetMapService
-        extends AbstractMapService<Vet, Long>
-        implements VetService
+public final class VetMapRepository
+        extends AbstractMapRepository<Vet, Long>
+        implements VetRepository
 {
     @Override
     public Set<Vet> findAll() {

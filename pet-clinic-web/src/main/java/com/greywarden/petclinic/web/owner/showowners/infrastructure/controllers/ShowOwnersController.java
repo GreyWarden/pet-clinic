@@ -1,6 +1,6 @@
 package com.greywarden.petclinic.web.owner.showowners.infrastructure.controllers;
 
-import com.greywarden.petclinic.services.OwnerService;
+import com.greywarden.petclinic.services.OwnerRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public final class ShowOwnersController {
 
-    private final OwnerService ownerService;
+    private final OwnerRepository ownerService;
 
-    public ShowOwnersController(OwnerService ownerService) {
+    public ShowOwnersController(OwnerRepository ownerService) {
         this.ownerService = ownerService;
     }
 
