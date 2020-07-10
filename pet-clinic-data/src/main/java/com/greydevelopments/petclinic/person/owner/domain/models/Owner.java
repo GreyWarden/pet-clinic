@@ -1,8 +1,9 @@
 package com.greydevelopments.petclinic.person.owner.domain.models;
 
-import com.greydevelopments.petclinic.pet.pet.domain.models.Pet;
 import com.greydevelopments.petclinic.person.shared.domain.models.Person;
+import com.greydevelopments.petclinic.pet.pet.domain.models.Pet;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public final class Owner extends Person {
@@ -12,10 +13,12 @@ public final class Owner extends Person {
     private Set<Pet> pets;
 
     public Owner() {
+        this.pets = new HashSet<>();
     }
 
     public Owner(String firstName, String lastName) {
         super(firstName, lastName);
+        this.pets = new HashSet<>();
     }
 
     public Owner(String firstName, String lastName, String address, String city, String phone) {
@@ -23,6 +26,7 @@ public final class Owner extends Person {
         this.address = address;
         this.city = city;
         this.phone = phone;
+        this.pets = new HashSet<>();
     }
 
     public Owner(String firstName, String lastName, String address, String city, String phone, Set<Pet> pets) {
@@ -63,5 +67,9 @@ public final class Owner extends Person {
 
     public void setPets(Set<Pet> pets) {
         this.pets = pets;
+    }
+
+    public void addPet(Pet pet) {
+        this.pets.add(pet);
     }
 }

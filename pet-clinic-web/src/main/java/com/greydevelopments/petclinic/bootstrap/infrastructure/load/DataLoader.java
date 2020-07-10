@@ -12,7 +12,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.util.HashSet;
 
 @Component
 public final class DataLoader implements CommandLineRunner {
@@ -40,34 +39,31 @@ public final class DataLoader implements CommandLineRunner {
         PetType catType = petTypeRepository.save(new PetType("Cat"));
         System.out.println("Loaded pet types...");
 
-        Owner laura = ownerRepository.save(
-            new Owner(
+        Owner laura = new Owner(
                 "Laura",
                 "Coratge",
                 "Calle falsa, 123",
                 "Murcia",
                 "622509280"
-            )
-        );
+            );
 
-        Owner raul = ownerRepository.save(
-            new Owner(
+        Owner raul = new Owner(
                 "Raúl",
                 "Pavón",
                 "Calle falsa, 123",
                 "Murcia",
                 "637079361"
-            )
-        );
-
+            );
         Pet nami = petRepository.save(
                 new Pet("Nami", LocalDate.now(), catType, laura)
         );
-
         Pet lila = new Pet("Lila", LocalDate.now(), dogType, raul);
-        HashSet<Pet> raulPets = new HashSet<>();
-        raulPets.add(lila);
-        raul.setPets(raulPets);
+
+        laura.addPet(nami);
+        ownerRepository.save(laura);
+
+        raul.addPet(lila);
+        ownerRepository.save(raul);
 
         System.out.println("Loaded owners...");
         System.out.println("Loaded pets...");
