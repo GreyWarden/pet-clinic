@@ -29,35 +29,35 @@ public final class DataLoader implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        PetType dog = new PetType();
-        dog.setName("Dog");
-        PetType dogType = petTypeRepository.save(dog);
-        PetType cat = new PetType();
-        cat.setName("Cat");
-        PetType catType = petTypeRepository.save(cat);
+        PetType dogType = petTypeRepository.save(new PetType("Dog"));
+        PetType catType = petTypeRepository.save(new PetType("Cat"));
         System.out.println("Loaded pet types...");
 
-        Owner laura = new Owner();
-        laura.setFirstName("Laura");
-        laura.setLastName("Coratge");
-        ownerRepository.save(laura);
+        Owner laura = ownerRepository.save(
+            new Owner(
+                "Laura",
+                "Coratge",
+                "Calle falsa, 123",
+                "Murcia",
+                "622509280"
+            )
+        );
 
-        Owner raul = new Owner();
-        raul.setFirstName("Raúl");
-        raul.setLastName("Pavón");
-        ownerRepository.save(raul);
+        Owner raul = ownerRepository.save(
+            new Owner(
+                "Raúl",
+                "Pavón",
+                "Calle falsa, 123",
+                "Murcia",
+                "637079361"
+            )
+        );
 
         System.out.println("Loaded owners...");
 
-        Vet firstVet = new Vet();
-        firstVet.setFirstName("Vet");
-        firstVet.setLastName("Erinario");
-        vetRepository.save(firstVet);
+        Vet firstVet = vetRepository.save(new Vet("Vet", "Erinario"));
 
-        Vet secondVet = new Vet();
-        secondVet.setFirstName("Vet");
-        secondVet.setLastName("Adine");
-        vetRepository.save(secondVet);
+        Vet secondVet = vetRepository.save(new Vet("Vet", "Adine"));
 
         System.out.println("Loaded vets...");
     }
