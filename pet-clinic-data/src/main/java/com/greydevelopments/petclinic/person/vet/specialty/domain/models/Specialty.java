@@ -5,6 +5,13 @@ import com.greydevelopments.petclinic.shared.domain.models.base.BaseEntity;
 public final class Specialty extends BaseEntity {
     private String name;
 
+    public Specialty() {
+    }
+
+    public Specialty(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
