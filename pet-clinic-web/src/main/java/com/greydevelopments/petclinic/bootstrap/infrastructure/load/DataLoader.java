@@ -1,4 +1,4 @@
-package com.greydevelopments.petclinic.bootstrap;
+package com.greydevelopments.petclinic.bootstrap.infrastructure.load;
 
 import com.greydevelopments.petclinic.person.owner.domain.models.Owner;
 import com.greydevelopments.petclinic.person.owner.domain.repositories.OwnerRepository;
